@@ -2,13 +2,13 @@ import java.util.Scanner;
 public class Main{
     public static void main(String [] args){
         Scanner input = new Scanner(System.in);
-        int num = 0;
+        int num = 0; //Set this as zero to avoid error because the java program is expecting a value for the variable
         String answer;
         
         do{
             System.out.print("Enter an integer (0 to exit):");
             
-            if (input.hasNextInt()){
+            if (input.hasNextInt()){ //This will check the token on the scanner if it's a integer or not. If not the program will go  to the else condition
                 num = input.nextInt();
             
                 if (num == 0){
